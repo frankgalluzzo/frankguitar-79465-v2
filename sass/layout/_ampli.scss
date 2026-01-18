@@ -1,0 +1,125 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+.titulo-empresa-amplificadores {
+    @include wh100;
+    position: absolute;
+    background-image: url(../imagenes/fondos/fondoampli3.jpg);
+    background-size: cover;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+    padding-bottom: 10px;
+}
+.titulo-empresa-amplificadores h1 {
+    align-items: center;
+}
+.titulo-empresa-amplificadores a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-tercero);
+    align-items: center;
+}
+.nombre-productos-amplificadores {
+    @include wh100;
+    color: $color-cuarto;
+    text-align: center;
+    font-size: 100px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    padding-top: 3.5vh;
+}
+.ampli-fondo {  
+    @include flex;
+    @include wh100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondoampli4.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    text-align: center;
+}
+.caja-producto-amplificador {
+    @include flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: $bg-secundario;
+    border-radius: $bradius;
+    box-shadow: 0.5px 2px 6px $color-principal;
+    flex-grow: 1;
+    color: $color-letra;
+    object-fit: cover;
+    width: 98%;
+    margin: 15px;
+    height: auto;
+    padding: 20px;
+    transition: transform 1s linear;
+}  
+.caja-producto-amplificador:hover{
+    transform: translatey(-15px);   
+}
+.caja-producto-amplificador img {
+    border-radius: $bradius;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    object-fit: contain;
+    padding: 0;
+}
+.caja-producto-amplificador a {
+    margin: 5px;
+    color: $color-cuarto;
+    background-color: $color-principal;
+    padding: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 8px 0 $color-principal;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: auto;
+    align-items: center;
+    border-radius: $bradius;
+}
+.caja-producto-amplificador a:hover {
+    background-color: $bg-tercero;
+    color: $color-cuarto;
+}
+.caja-producto-amplificador h4 {
+    color: $color-letratres;
+    font-size: 40px;
+    align-items: center;
+    position: static;
+    text-shadow: -1px -1px 0 $color-principal,
+        -1px 1px 0 $color-principal,
+        1px -1px 0 $color-principal,
+        1px 1px 0 $color-principal;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+.caja-producto-amplificador p {
+    color: $color-tercero;
+    border: 1px solid $color-principal;
+    padding: 3px;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: $color-quinto;
+    box-shadow: 0 0 8px 0 $color-principal;
+    font-size: 18px;
+    object-fit: contain;
+}
+.caja-producto-amplificador h5 {
+    color: $color-secundario;
+    font-size: 15px;
+    align-items: center;
+    position: static;
+    padding: 0;
+    margin: 0;
+}

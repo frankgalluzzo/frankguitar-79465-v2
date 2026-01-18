@@ -1,0 +1,57 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins"as *;
+
+.boton {
+  @include display (flex, center, flex-start);
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px $color-principal;
+  text-decoration: none;
+}
+.sign {
+  @include wh100;
+  @include display (flex, center, center);
+  transition: 0.3s;
+}
+.sign img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+}
+.text {
+  position: absolute;
+  right: 0%;
+  width: 0%;
+  opacity: 0;
+  color: $color-tercero;
+  font-size: 1em;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.boton:hover {
+  width: 160px;
+  border-radius: 35px;
+}
+.boton:hover .sign {
+  width: 35%;
+  padding-left: $padding-principal;
+}
+.boton:hover .text {
+  opacity: 1;
+  width: 70%;
+  padding-right: $padding-principal;
+}
+.btn-ingresar, .btn-compras {
+  background-color: $bg-principal;
+}
+.boton:active {
+  transform: translate(1px, 1px);
+}
+
+

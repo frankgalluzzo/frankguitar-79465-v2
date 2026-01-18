@@ -1,0 +1,219 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1000;
+}
+.contenedor-header {
+    display: flex;
+    width: 100%;
+    padding: 0;
+}
+/*---------- header--------- barra principal */
+.barra-principal {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    position: relative;
+    top: 9.4em;
+    box-shadow: 0 0 8px 0 $color-principal;
+    padding: 1px;
+}
+.imagen-logo {
+    width: 10%;
+    height: 10%;
+    object-fit: cover;
+}
+.inicio-barras a img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand img {
+    height: 30px;
+    width: auto;
+}
+.navbar-nav .nav-link {
+    font-family: fuenteracing;
+    font-weight: bold;
+    color: $color-letra;
+}
+.navbar-nav .nav-link:hover {
+    color: $color-octavo;
+}
+.dropdown-menu {
+    background-color: $bg-principal !important;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.dropdown-item {
+    color: $color-letra;
+    text-align: center;
+}
+.dropdown-item:hover {
+    background-color: $bg-tercero;
+    color: $color-cuarto;
+}
+.navbar-toggler {
+    margin-left: 0;
+}
+@media (min-width: 992px) {
+  .navbar .dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+}
+/*---------- header--------- buscador barra principal */
+.contenedor-buscador-principal {
+    @include display (flex, flex-end, right);
+    background-color: $bg-principal;
+    width: 20%;
+    bottom: 36px;
+    position: relative; 
+    left: 1180px
+}
+/* ------------- header--------------redes */
+.enlaces-redes-logo {
+    @include display (flex, flex-start, space-evenly);
+    position: absolute;
+    top: 30%;
+    left: 5%; 
+    gap: 35px;
+}
+.enlaces-redes-logo a {
+    width: 38px;
+    height: 38px;
+    bottom: 100%;   
+}
+.enlaces-redes-logo a img {
+    width: 60px;
+    height: 60px;
+    bottom: 100%;
+    gap: 10px;
+}
+/*------------header---------- perfil y carrito de compras */
+.contenedor-ingreso-compras {
+    width: 200px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: $color-tercero;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.caja-compras {
+    @include flex;
+    align-items: center;
+    gap: 5px;
+}
+.item-compras {
+    @include display (flex, center, center);
+    gap: 6px;
+}
+.item-compras img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px $color-principal;
+}
+.item-compras p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow:
+        -2px -2px 0 $color-cuarto,
+        -2px 2px 0 $color-cuarto,
+        2px -2px 0 $color-cuarto,
+        2px 2px 0 $color-cuarto;
+}
+.registro {
+    margin-top: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: $color-tercero;
+}
+.registro h3 {
+    margin: 0;
+    font-size: 15px;
+    font-weight: bold;
+    text-shadow:
+        -2px -2px 0 $color-cuarto,
+        -2px 2px 0 $color-cuarto,
+        2px -2px 0 $color-cuarto,
+        2px 2px 0 $color-cuarto;
+}
+.titulo-empresa-inicio {
+    @include wh100;
+    position: absolute;
+    background-image: url(../imagenes/fondos/imgdefondo5.jpg);
+    background-size: cover;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.titulo-empresa-inicio h1 {
+    align-items: center;
+}
+.titulo-empresa-inicio a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-sexto);
+    align-items: center;
+}
+.nombre-empresa {
+    @include wh100;
+    color: $color-cuarto;
+    text-align: center;
+    font-size: 108px;
+    font-family: fuenteyellow;
+    font-weight: 600;
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    padding-top: px;
+    align-items: first baseline;
+    animation: aparecer 1s;
+}
+@keyframes aparecer {
+    from {transform: scaleY(0.5)}
+    to {transform: scaleY(1);}    
+    }
+.productos-empresa {
+    @include wh100;
+    color: $color-cuarto(28, 8, 37);
+    text-align: center;
+    font-size: 25px;
+    font-family: fuentedarkcollege;
+    font-weight: 200;   
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    margin-top: -5px;
+    animation: mostrar 2s;
+}
+@keyframes mostrar {
+    from {transform: scale(0.1)}
+    to {transform: scale(1);}    
+    }
+.card.caja-producto > .link-producto {
+  text-decoration: none !important;
+  color: inherit !important;
+  background: none !important;
+  padding: 0 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  display: block;
+}
+.card.caja-producto > .link-producto:hover {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+.card.caja-producto > .link-producto img {
+  display: block;
+  cursor: pointer;
+}
+
+

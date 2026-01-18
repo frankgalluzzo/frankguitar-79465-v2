@@ -1,0 +1,125 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+@media (max-width: 412px) {
+
+  /* Header */
+  header {
+        width: 412px;      
+    }
+  .nombre-empresa {
+    font-size: 58px;
+    line-height: 1.5;
+  }
+  .productos-empresa {
+    font-size: 18px;
+  }
+  .caja-titulo-header {
+    top: 95px;
+  }
+  /* Barra principal */
+  .barra-principal {
+    height: 7vh;
+  }
+  .navbar-nav .nav-link {
+    font-size: 15px;
+    padding: 8px;
+  }
+
+  /* Redes header */
+  .enlaces-redes-logo {
+    left: 15px;
+    gap: 3px;
+  }
+  .enlaces-redes-logo a img {
+    width: 34px;
+    height: 34px;
+  }
+  /* Carrito */
+  .contenedor-ingreso-compras {
+    left: 65%;
+  }
+  .contenedor-ingreso-compras p,
+  .contenedor-ingreso-compras h3 {
+    font-size: 11px;
+  }
+  /* Cards productos */
+  .caja-producto img {
+    max-height: 200px;
+  }
+  .caja-producto h4 {
+    font-size: 24px;
+  }
+  /* Títulos páginas */
+  .titulo-empresa-guitarras h1,
+  .titulo-empresa-bajos h1,
+  .titulo-empresa-amplificadores h1{
+    font-size: 48px;
+    line-height: 1.4;
+  }
+
+  /* Producto individual */
+.nombre-empresa-individual {
+    font-size: 42px;
+    text-align: center;
+  }
+.enlaces-redes-individual img{
+    width: 35px;
+    height: 35px;
+}
+.caja-producto-individual h4 {
+    font-size: 25px;
+    padding: 2px;
+  }
+.caja-producto-individual p {
+    font-size: 25px;
+    padding: 2px;
+  }
+.caja-producto-individual a {
+    font-size: 15px;
+    padding: 2px;
+  }
+  /* Footer */ 
+.contenedor-footer{
+    padding: 0;
+    gap: 0;
+}
+.caja-redes{
+    gap: 0;
+}
+.caja-redes a{
+    font-size: 14px;
+}
+.caja-redes img{
+    width: 45px;
+    height: 45px;
+}
+.caja-redes li{
+  gap: 0;
+  font-size: 12px;
+  padding: 0;
+}
+.caja-redes-logo{
+    font-size: 13px;
+}
+.caja-redes-logo img{
+    width: 70px;
+    height: 70px;
+}
+.hr-linea {
+    padding: 0;
+}
+  /* Whatsapp logo */ 
+.whatsapp-logo{
+    right: 5px;
+}
+.whatsapp-logo img {
+    width: 50px;
+    height: 50px;
+}
+.whatsapp-logo:hover {
+    transform: none;
+}
+
+}
+

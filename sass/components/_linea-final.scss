@@ -1,0 +1,19 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins"as *;
+
+.fila-final {
+    @include wh100;
+    @include display (inline-block, center, space-between);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-letrados;
+    font-weight: 500;
+    background-color: $bg-principal;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $padding-principal; 
+    text-decoration: none;
+    gap: 20px;
+
+}

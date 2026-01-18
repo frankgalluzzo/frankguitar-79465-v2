@@ -1,0 +1,144 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+.titulo-empresa-guitarras {
+    @include wh100;
+    position: absolute;
+    background-image: url(../imagenes/fondos/imgdefondo7.jpg);
+    background-size: cover;
+    padding-bottom: $padding-principal;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.titulo-empresa-guitarras h1 {
+    align-items: center;
+}
+.titulo-empresa-guitarras a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-sexto);
+    align-items: center;
+}
+.nombre-productos-guitarras {
+    color: $color-cuarto;
+    text-align: center;
+    font-size: 100px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    padding-top: 5vh;
+    width: 100%;
+    height: 100%;
+}
+.guitarras-fondo {
+    @include flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blanchedalmond;
+    font-weight: 400;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondoneon.avif);
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    width: 100%;
+    text-align: center;
+}
+
+.caja-producto-guitarra {
+    background-color: transparent;
+    width: 95%;
+    text-align: center;
+    padding: 5px;
+    border-radius: $bradius;
+    box-shadow: 0.5px 2px 6px $color-principal;
+    flex-grow: 1;
+    gap: 2px;
+    align-items: center;
+    justify-content: center;
+    margin: 35px 10px 40px 35px;
+    transition: transform 1s linear;
+} 
+.caja-producto-guitarra:hover{
+    transform: translatey(-30px);   
+}
+.caja-producto-guitarra img {
+    margin-top: 5px;
+    border-radius: $bradius;
+    height: 5%;
+    width: 70%;
+    align-items: center;
+    position: static;
+}
+.caja-producto-guitarra a {
+    margin: 5px;
+    color: $color-cuarto;
+    background-color: $color-principal;
+    padding: 5px;
+    border-radius: $bradius;
+    text-decoration: none;
+    box-shadow: 0 0 8px 0 $color-principal;
+    text-align: center;
+    font-family: fuentedarkcollege;
+    font-weight: 200;
+    justify-content: center;
+    width: auto;
+    align-items: end;
+}
+.caja-producto-guitarra a:hover {
+    background-color: $bg-tercero;
+    color: $color-cuarto;
+}
+.caja-producto-guitarra h4 {
+    color: $color-letratres;
+    font-size: 40px;
+    align-items: center;
+    position: static;
+    text-shadow: -1px -1px 0 $color-principal,
+        -1px 1px 0 $color-principal,
+        1px -1px 0 $color-principal,
+        1px 1px 0 $color-principal;
+}
+.caja-producto-guitarra p {
+    color: $color-tercero;
+    border: 1px solid $color-principal;
+    padding: 3px;
+    border-radius: 3px;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 15px;
+    background-color: $bg-quinto;
+    box-shadow: 0 0 8px 0 $color-principal;
+    font-size: 18px;
+    font-weight: 400;
+}
+.caja-producto-guitarra h5 {
+    color: $color-secundario;
+    font-size: 15px;
+    align-items: center;
+    position: static;
+}
+.caja-producto-guitarra button {
+    background-color: $bg-secundario;
+    height: 0;
+    width: 0;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-right: 100px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.caja-producto-guitarra button a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    color: $color-cuarto;
+    border: 1px solid $color-quinto;
+    padding: 1px;
+    background-color: $color-principal;
+    width: auto;
+    height: auto;
+}
+   

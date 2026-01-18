@@ -1,0 +1,48 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+.titulo-empresa-bajos {
+    @include wh100;
+    position: absolute;
+    background-image: url(../imagenes/fondos/fondobajo3.jpg);
+    background-size: cover;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.titulo-empresa-bajos h1 {
+    @include wh100;
+    align-items: center;
+}
+.titulo-empresa-bajos a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-tercero);
+    align-items: center;
+}
+.nombre-productos-bajos {
+    @include wh100;
+    color: $color-cuarto;
+    text-align: center;
+    font-size: 100px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    padding: 20px;
+}
+.bajos-fondo {
+    @include flex;
+    @include wh100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: $color-tercero;
+    font-weight: 400;
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondobajo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: space-evenly;
+    padding-top: 200px;
+    text-align: center;
+}

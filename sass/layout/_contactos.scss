@@ -1,0 +1,105 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+.titulo-empresa-contactanos {
+    @include wh100;
+    position: absolute;
+    background-image: url(../imagenes/fondos/imgdefondo6.jpg);
+    background-size: cover;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.titulo-empresa-contactanos h1 {
+    align-items: center;
+}
+.titulo-empresa-contactanos a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-sexto);
+    align-items: center;
+}
+.nombre-contactanos {
+    color: $color-cuarto;
+    text-align: center;
+    font-size: 100px;
+    font-family: fuentecodiment;
+    font-weight: 700;
+    text-shadow: -2px -2px 0 $color-tercero,
+        -2px 2px 0 $color-tercero,
+        2px -2px 0 $color-tercero,
+        2px 2px 0 $color-tercero;
+    padding-top: 3.5vh;
+}
+.imagen-redes {
+    margin: 15px;
+    padding: $padding-principal;
+    image-orientation: inherit;
+}
+.main-contactanos {
+    background: linear-gradient(rgba(166, 178, 208, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/contactosfondo.jpg);
+    background-size: auto;
+}
+.contenedor-contactos-main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    padding-top: 240px;
+}
+.contactos-cajas {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 30px;
+}
+.contactos-informacion {
+    background: $bg-principal;
+    color: $color-principal;
+    padding: 30px;
+    border-radius: $bradius;   
+}
+.contactos-informacion:hover{
+ background: $bg-contacto;
+}
+.contactos-informacion h2 {
+    margin-bottom: 20px;
+}
+.contactos-formulario {
+    background: $bg-sexto;
+    padding: 30px;
+    border-radius: $bradius;
+    color: $color-letratres;
+    transition: transform 2s,
+}
+.contactos-formulario:hover{
+    transform: scale(1.1);  
+}
+.contactos-formulario h2 {
+    margin-bottom: 20px;
+}
+.contactos-formulario form {
+    display: grid;
+    gap: 15px;
+}
+.contactos-formulario label {
+    display: grid;
+    font-weight: bold;
+    gap: 5px;
+}
+.contactos-formulario input,
+.contactos-formulario select,
+.contactos-formulario textarea {
+    padding: $padding-principal;
+    border-radius: $bradius;
+    border: 1px solid $color-sexto;
+}
+.contactos-formulario button {
+    padding: $padding-principal;
+    background: $color-principal;
+    color: $color-cuarto;
+    border: none;
+    border-radius: $bradius;
+    cursor: pointer;
+}
+.contactos-formulario button:hover {
+    color: $color-cuarto;
+    background: $bg-tercero;
+}

@@ -1,0 +1,14 @@
+
+@mixin flex { 
+    display: flex;
+    flex-direction: column;  
+}
+@mixin wh100 { 
+    width: 100%;
+    height: 100%; 
+}
+@mixin display ($display, $align, $justity) { 
+    display: $display;
+    align-items: $align;
+    justify-content: $justity;
+}

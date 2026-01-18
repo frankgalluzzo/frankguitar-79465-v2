@@ -1,0 +1,76 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+.titulo-empresa-redessociales {
+    position: absolute;
+    background-image: url(../imagenes/fondos/fondoredes.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 10px;
+    z-index: 100;
+    box-shadow: 0 0 8px 0 $color-principal;
+}
+.titulo-empresa-redessociales a img:hover {
+    filter: drop-shadow(0px 0px 5px $color-sexto);
+    align-items: center;
+}
+.contenedor-redessociales {
+    @include flex;
+    padding: 240px 50px 50px 15px;
+    gap: 35px;
+    background: linear-gradient(rgba(127, 138, 165, 0.75), rgba(5, 7, 12, 0.75)),
+        url(../imagenes/fondos/fondoredessociales.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    overflow: hidden;
+}
+.caja-producto-redes {
+    max-width: 750px;
+    background-color: $bg-principal;
+    color: $color-sexto;
+    padding: 25px;
+    border-radius: $bradius;
+    box-shadow: 0 0 20px $color-cuarto;  
+    transition: transform 2s linear;
+}
+.caja-producto-redes:hover{
+    transform: rotatey(360deg);
+    background: linear-gradient(rgba(127, 138, 165, 0.75), rgba(5, 7, 12, 0.75)),
+   
+}
+.caja-producto-redes h3 {
+    margin-bottom: 15px;
+    color: $color-principal;
+    text-align: center;
+}
+.caja-producto-redes img {
+    width: 100%;
+    height: auto;
+    max-height: 420px;
+    object-fit: contain;
+    border-radius: $bradius;
+    display: block;
+    margin: 0 0 15px;
+}
+.información-redes {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.link-youtube {
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: $color-principal;
+    color: $color-cuarto;
+    border-radius: $bradius;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+.link-youtube:hover {
+    background-color: $color-septimo;
+    color: $color-sexto;
+}

@@ -1,0 +1,9 @@
+@use "../utilities/variable" as *;
+.hr-linea {
+    background-color: $bg-linea;
+    border: 2px $color-principal;
+    border-style: outset;
+    padding: 1px;
+    box-shadow: 0 0 10px 0 $color-principal;
+}
+ 
