@@ -1,0 +1,109 @@
+@use "../utilities/variable" as *;
+@use "../utilities/mixins" as *;
+
+@media (max-width: 360px) {
+  /* Header */
+  header {
+    width: 100%;
+  }
+  .nombre-empresa {
+    font-size: 52px;
+    line-height: 1.4;
+  }
+  .productos-empresa {
+    font-size: 16px;
+  }
+  .caja-titulo-header {
+    top: 90px;
+  }
+  /* Barra principal */
+  .barra-principal {
+    height: 6.5vh;
+  }
+  .navbar-nav .nav-link {
+    font-size: 14px;
+    padding: 6px;
+  }
+  /* Redes header */
+  .enlaces-redes-logo {
+    left: 10px;
+    gap: 2px;
+  }
+  .enlaces-redes-logo a img {
+    width: 35px;
+    height: 35px;
+  }
+  /* Carrito */
+  .contenedor-ingreso-compras {
+    left: 60%;
+  }
+  .contenedor-ingreso-compras p,
+  .contenedor-ingreso-compras h3 {
+    font-size: 10px;
+  }
+  /* Cards productos */
+  .caja-producto img {
+    max-height: 180px;
+  }
+  .caja-producto h4 {
+    font-size: 20px;
+  }
+  /* Títulos páginas */
+  .titulo-empresa-guitarras h1,
+  .titulo-empresa-bajos h1,
+  .titulo-empresa-amplificadores h1 {
+    font-size: 42px;
+    line-height: 1.3;
+  }
+  /* Producto individual */
+  .nombre-empresa-individual {
+    font-size: 36px;
+    text-align: center;
+  }
+  .enlaces-redes-individual img {
+    width: 32px;
+    height: 32px;
+  }
+  /* Footer */
+  .contenedor-footer {
+    padding: 0;
+    gap: 0;
+  }
+  .caja-redes {
+    gap: 0;
+  }
+  .caja-redes a {
+    font-size: 13px;
+  }
+  .caja-redes img {
+    width: 40px;
+    height: 40px;
+  }
+  .caja-redes li {
+    gap: 0;
+    font-size: 11px;
+    padding: 0;
+  }
+  .caja-redes-logo {
+    font-size: 12px;
+  }
+  .caja-redes-logo img {
+    width: 45px;
+    height: 45px;
+  }
+  .hr-linea {
+    padding: 0;
+  }
+  /* Whatsapp logo */
+  .whatsapp-logo {
+    right: 5px;
+    bottom: 10px;
+  }
+  .whatsapp-logo img {
+    width: 45px;
+    height: 45px;
+  }
+  .whatsapp-logo:hover {
+    transform: none;
+  }
+}
