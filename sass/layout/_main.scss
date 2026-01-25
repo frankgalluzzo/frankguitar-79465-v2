@@ -79,6 +79,7 @@
     color: $color-cuarto;
 }
 .caja-producto h4 {
+    font-family: fuenteracing;
     color: $color-letratres;
     font-size: 40px;
     align-items: center;
@@ -88,6 +89,7 @@
         1px -1px 0 $color-principal,
         1px 1px 0 $color-principal;
     width: auto;
+    text-decoration: none;
 }
 .caja-producto p {
     color: $color-tercero;

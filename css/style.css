@@ -438,12 +438,14 @@ header {
 }
 
 .caja-producto h4 {
+  font-family: fuenteracing;
   color: rgb(45, 45, 114);
   font-size: 40px;
   align-items: center;
   position: static;
   text-shadow: -1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px -1px 0 goldenrod, 1px 1px 0 goldenrod;
   width: auto;
+  text-decoration: none;
 }
 
 .caja-producto p {
@@ -1494,25 +1496,25 @@ textarea {
 
 @media (max-width: 500px) {
   header {
-    height: 150px;
+    height: 180px;
   }
   .caja-titulo-header {
     top: 100px;
   }
   .nombre-empresa {
-    font-size: 65px;
-    line-height: 1.7;
+    font-size: 60px;
+    line-height: 1.5;
   }
   .productos-empresa {
     font-size: 20px;
   }
   /* -------------Barra principal ---------------- */
   .barra-principal {
-    height: 8vh;
-    top: 150px;
+    height: 7vh;
+    top: 180px;
   }
   .navbar-nav .nav-link {
-    font-size: 16px;
+    font-size: 18px;
     padding: 10px;
     background-color: black;
   }
@@ -1520,40 +1522,46 @@ textarea {
     background-color: black;
   }
   .navbar-toggler {
-    margin-left: auto;
+    margin-left: 80%;
   }
   /* Redes header */
   .enlaces-redes-logo {
     display: flex;
     flex-direction: column;
-    gap: 4px;
-    top: 10px;
-    left: 25px;
+    gap: 12px;
+    top: 25px;
+    left: 60px;
   }
   .enlaces-redes-logo a img {
-    width: 40;
+    width: 40px;
     height: 40px;
   }
   /* carrito header */
   .contenedor-ingreso-compras {
-    left: 70%;
+    left: 64%;
     text-align: center;
   }
   .contenedor-ingreso-compras p {
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.5;
   }
   .contenedor-ingreso-compras h3 {
     text-decoration: underline;
     font-size: 12px;
-    transform: translateX(-25px);
+    position: absolute;
+    right: 25px;
+    top: 30px;
+  }
+  .caja-compras {
+    gap: 10px;
+    margin: 10px;
   }
   .caja-compras a img {
     width: 35px;
     height: 35px;
   }
   .boton:hover {
-    width: 40px;
+    width: 35px;
     border-radius: 50%;
   }
   .boton:hover .sign {
@@ -1575,7 +1583,7 @@ textarea {
     margin-top: 0px;
   }
   .main-guitarras h2 {
-    font-size: 20px;
+    font-size: 25px;
   }
   .contenedor-productos {
     flex-direction: column;
@@ -1586,6 +1594,10 @@ textarea {
     width: 100%;
     margin: 0;
     padding: 15px;
+    transition: none;
+  }
+  .caja-producto:hover {
+    transform: none;
   }
   .caja-producto img {
     width: 100%;
@@ -1593,7 +1605,7 @@ textarea {
     max-height: 220px;
   }
   .caja-producto h4 {
-    font-size: 26px;
+    font-size: 35px;
     margin: 10px 0;
   }
   .caja-producto h5 {
@@ -1626,6 +1638,9 @@ textarea {
     height: 60px;
   }
   /*----- Página Guitarras eléctricas------------------------  */
+  .guitarras-fondo {
+    margin-top: 60px;
+  }
   .titulo-empresa-guitarras h1 {
     font-size: 55px;
     line-height: 1.5;
@@ -1638,9 +1653,16 @@ textarea {
     flex-direction: column;
     align-items: center;
   }
+  .contenedor-productos-guitarra {
+    width: 90%;
+  }
   .caja-producto-guitarra {
     margin: 8px;
-    padding: 8px;
+    padding: 10px;
+    transition: none;
+  }
+  .caja-producto-guitarra:hover {
+    transform: none;
   }
   .caja-producto-guitarra h4 {
     font-size: 26px;
@@ -1649,6 +1671,9 @@ textarea {
     font-size: 12px;
   }
   /* Página Bajos ------------------ */
+  .bajos-fondo {
+    margin-top: 60px;
+  }
   .titulo-empresa-bajos {
     text-align: center;
     padding: 10px;
@@ -1657,18 +1682,37 @@ textarea {
     font-size: 55px;
   }
   /* Página Amplificadores ------------------ */
+  .ampli-fondo {
+    margin-top: 60px;
+  }
   .titulo-empresa-amplificadores h1 {
     font-size: 55px;
     line-height: 2;
   }
+  .caja-producto-amplificador h4 {
+    font-size: 35px;
+  }
   .caja-producto-amplificador {
-    margin: 2px;
-    padding: 2px;
+    margin: 20px;
+    padding: 5px;
+    transition: none;
+    right: 20px;
+    gap: 2px;
+  }
+  .caja-producto-amplificador:hover {
+    transform: none;
+  }
+  .caja-producto-amplificador img {
+    width: 250px;
+    height: 250px;
   }
   /* Página Contactanos----------------- */
+  .main-contactanos {
+    margin-top: 50px;
+  }
   .titulo-empresa-contactanos h1 {
     font-size: 55px;
-    line-height: 2.3;
+    line-height: 3;
   }
   .contactos-cajas {
     grid-template-columns: 1fr;
@@ -1678,9 +1722,12 @@ textarea {
     padding: 15px;
   }
   /* Página Redes Sociales---------------- */
+  .contenedor-redessociales {
+    margin-top: 50px;
+  }
   .titulo-empresa-redessociales h1 {
     font-size: 55px;
-    line-height: 2.3;
+    line-height: 3;
   }
   .caja-producto-redes {
     padding: 18px;
@@ -1690,9 +1737,8 @@ textarea {
   }
   /* Carrusel de fotos ------------ */
   .carrusel {
-    width: 100%;
-    left: 0;
-    height: auto;
+    width: 95%;
+    left: 10px;
   }
   .carousel-item img {
     width: 100%;
@@ -1737,7 +1783,7 @@ textarea {
   }
   /* Logo Whatapp ---------------- */
   .whatsapp-logo {
-    right: 5px;
+    right: 25px;
   }
   .whatsapp-logo img {
     width: 50px;
@@ -1753,8 +1799,8 @@ textarea {
     width: 100%;
   }
   .nombre-empresa {
-    font-size: 58px;
-    line-height: 1.5;
+    font-size: 50px;
+    line-height: 2;
   }
   .productos-empresa {
     font-size: 18px;
@@ -1764,24 +1810,28 @@ textarea {
   }
   /* Barra principal */
   .barra-principal {
-    height: 7vh;
+    height: 6vh;
   }
   .navbar-nav .nav-link {
     font-size: 15px;
-    padding: 8px;
+    padding: 10px;
+  }
+  .navbar-toggler {
+    margin-left: 40%;
+    width: 100%;
   }
   /* Redes header */
   .enlaces-redes-logo {
-    left: 15px;
-    gap: 3px;
+    left: 25px;
+    gap: 5px;
   }
   .enlaces-redes-logo a img {
-    width: 34px;
-    height: 34px;
+    width: 35px;
+    height: 35px;
   }
   /* Carrito */
   .contenedor-ingreso-compras {
-    left: 65%;
+    left: 61%;
   }
   .contenedor-ingreso-compras p,
   .contenedor-ingreso-compras h3 {
@@ -1794,6 +1844,12 @@ textarea {
   .caja-producto h4 {
     font-size: 24px;
   }
+  .main-index {
+    margin-top: 60px;
+  }
+  .main-guitarras h2 {
+    font-size: 20px;
+  }
   /* Títulos páginas */
   .titulo-empresa-guitarras h1,
   .titulo-empresa-bajos h1,
@@ -1803,20 +1859,20 @@ textarea {
   }
   /* Producto individual */
   .nombre-empresa-individual {
-    font-size: 42px;
-    text-align: center;
+    font-size: 40px;
   }
   .enlaces-redes-individual img {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .caja-producto-individual h4 {
     font-size: 25px;
     padding: 2px;
   }
   .caja-producto-individual p {
-    font-size: 25px;
-    padding: 2px;
+    font-size: 20px;
+    padding: 0px;
+    border-radius: 10px;
   }
   .caja-producto-individual a {
     font-size: 15px;
@@ -1826,16 +1882,20 @@ textarea {
   .contenedor-footer {
     padding: 0;
     gap: 0;
+    line-height: 1.2;
   }
   .caja-redes {
     gap: 0;
+    padding: 0;
+    margin-left: 10px;
+    position: static;
   }
   .caja-redes a {
     font-size: 14px;
   }
   .caja-redes img {
-    width: 45px;
-    height: 45px;
+    width: 37px;
+    height: 37px;
   }
   .caja-redes li {
     gap: 0;
@@ -1843,7 +1903,9 @@ textarea {
     padding: 0;
   }
   .caja-redes-logo {
+    display: flex;
     font-size: 13px;
+    padding: 0;
   }
   .caja-redes-logo img {
     width: 70px;
@@ -1854,7 +1916,7 @@ textarea {
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 5px;
+    right: 15px;
   }
   .whatsapp-logo img {
     width: 50px;

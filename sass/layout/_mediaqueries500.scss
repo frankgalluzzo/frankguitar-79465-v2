@@ -3,67 +3,76 @@
 
 @media (max-width: 500px) {
 header {
-        height: 150px;
+        height: 180px;
     }
 .caja-titulo-header{
     top: 100px;
 }
 .nombre-empresa {
-    font-size: 65px;
-    line-height: 1.7;
+    font-size: 60px;
+    line-height: 1.5;
 }
 .productos-empresa {
     font-size: 20px; 
     }
 /* -------------Barra principal ---------------- */
 .barra-principal {
-    height: 8vh;
-    top: 150px;      
+    height: 7vh;
+    top: 180px;      
 }
 .navbar-nav .nav-link {
-    font-size: 16px;
-    padding: 10px;
+    font-size: 18px;
+    padding: $padding-principal;
+    
     background-color: $color-cuarto;
   }
 .d-flex button {
     background-color: $bg-principal;
   } 
 .navbar-toggler {
-    margin-left: auto;
+    margin-left: 80%;
   }
 
 /* Redes header */
 .enlaces-redes-logo {
    @include flex;
-    gap: 4px;
-    top: 10px;
-    left: 25px;     
+    gap: 12px;
+    top: 25px;
+    left: 60px;     
 }
 .enlaces-redes-logo a img {
-    width: 40;
+    width: 40px;
     height: 40px;
 }
 /* carrito header */
 .contenedor-ingreso-compras {
-     left: 70%;
+     left: 64%;
      text-align: center;
+    
     }
 .contenedor-ingreso-compras p{
     font-size: 12px;
-    line-height: 1.3;
+    line-height: 1.5;
     }
 .contenedor-ingreso-compras h3{
     text-decoration: underline;
     font-size: 12px;
-    transform: translateX(-25px);
+    position: absolute;
+    right: 25px;
+    top: 30px;
+
     }
+.caja-compras{
+    gap: 10px;
+    margin: 10px;
+}
 .caja-compras a img {
     width: 35px;
     height: 35px;
     }
 
 .boton:hover {
-    width: 40px;
+    width: 35px;
     border-radius: 50%;
   }
 .boton:hover .sign {
@@ -85,7 +94,7 @@ header {
         margin-top: 0px;
     }
 .main-guitarras h2 {
-        font-size: 20px;   
+        font-size: 25px;   
     }
 .contenedor-productos {
         flex-direction: column;
@@ -96,19 +105,24 @@ header {
         width: 100%;
         margin: 0;
         padding: 15px;
+        transition: none;
     }
+.caja-producto:hover{
+    transform: none
+}
 .caja-producto img {
         width: 100%;
         height: auto;
         max-height: 220px;
     }
 .caja-producto h4 {
-        font-size: 26px;
+        font-size: 35px;
         margin: 10px 0;
     }
 .caja-producto h5 {
         font-size: 14px;
     }
+
 /*---- Footer----- */
 .caja-redes a{
     @include flex;
@@ -135,6 +149,10 @@ header {
         height: 60px;
     }
 /*----- Página Guitarras eléctricas------------------------  */
+
+.guitarras-fondo{
+    margin-top: 60px;
+}
 .titulo-empresa-guitarras h1 { 
     font-size: 55px;
     line-height: 1.5;
@@ -146,10 +164,18 @@ header {
     @include flex;
     align-items: center;
 }
+.contenedor-productos-guitarra {
+   width: 90%;
+} 
 .caja-producto-guitarra {
     margin: 8px;
-    padding: 8px;
-  }
+    padding: 10px;
+    transition: none
+} 
+.caja-producto-guitarra:hover{
+    transform: none;   
+}
+
 .caja-producto-guitarra h4 {
         font-size: 26px;
     }
@@ -157,6 +183,9 @@ header {
         font-size: 12px;
     }
 /* Página Bajos ------------------ */
+.bajos-fondo{
+    margin-top: 60px;
+}
 .titulo-empresa-bajos {
         text-align: center;
         padding: $padding-principal;     
@@ -165,18 +194,39 @@ header {
     font-size: 55px;
     }
 /* Página Amplificadores ------------------ */
+.ampli-fondo {
+    margin-top: 60px;
+}
 .titulo-empresa-amplificadores h1 {
     font-size: 55px;
     line-height: 2; 
     }
+.caja-producto-amplificador h4{
+   font-size: 35px;
+}
+
 .caja-producto-amplificador {
-    margin: 2px;
-    padding: 2px;
-  }
+    margin: 20px;
+    padding: 5px;
+    transition: none;
+    right: 20px;
+    gap: 2px;
+} 
+.caja-producto-amplificador:hover{
+    transform: none;   
+}
+.caja-producto-amplificador img {
+    width: 250px;
+    height: 250px;
+} 
+
 /* Página Contactanos----------------- */
+.main-contactanos{
+    margin-top: 50px;
+}
 .titulo-empresa-contactanos h1 {
     font-size: 55px;
-    line-height: 2.3; 
+    line-height: 3; 
     }
 .contactos-cajas {
         grid-template-columns: 1fr;
@@ -186,9 +236,12 @@ header {
         padding: 15px;
     }
 /* Página Redes Sociales---------------- */
+.contenedor-redessociales{
+    margin-top: 50px;
+}
 .titulo-empresa-redessociales h1 {
     font-size: 55px;
-    line-height: 2.3;  
+    line-height: 3;  
     }
 .caja-producto-redes {
         padding: 18px;
@@ -198,9 +251,8 @@ header {
     }
 /* Carrusel de fotos ------------ */
 .carrusel {
-    width: 100%;
-    left: 0;
-    height: auto;  
+    width: 95%;
+    left: 10px;
   }
   .carousel-item img {
     width: 100%;
@@ -245,7 +297,7 @@ header {
   }
 /* Logo Whatapp ---------------- */
 .whatsapp-logo {
-    right: 5px;
+    right: 25px;
 }
 .whatsapp-logo img {
     width: 50px;
