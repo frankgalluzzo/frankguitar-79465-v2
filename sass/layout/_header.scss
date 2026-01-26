@@ -110,6 +110,7 @@ header {
     align-items: center;
     gap: 5px;
 }
+
 .item-compras {
     @include display (flex, center, center);
     gap: 6px;
@@ -172,7 +173,6 @@ header {
         -2px 2px 0 $color-tercero,
         2px -2px 0 $color-tercero,
         2px 2px 0 $color-tercero;
-    padding-top: px;
     align-items: first baseline;
     animation: aparecer 1s;
 }

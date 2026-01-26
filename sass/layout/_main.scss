@@ -79,9 +79,9 @@
     color: $color-cuarto;
 }
 .caja-producto h4 {
-    font-family: fuenteracing;
+    font-family: fuenteszombie;
     color: $color-letratres;
-    font-size: 40px;
+    font-size: 45px;
     align-items: center;
     position: static;
     text-shadow: -1px -1px 0 $color-principal,
@@ -130,7 +130,7 @@
 }
 .main-bajo {
     @include flex;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: fuentechristmare;
     font-weight: 400;
     background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondobajo3.jpg);
     background-position: center center;

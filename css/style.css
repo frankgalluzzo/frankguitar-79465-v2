@@ -21,6 +21,18 @@
   font-family: fuenteracing;
   src: url(../tipos-de-letras/Racing_Sans_One/RacingSansOne-Regular.ttf);
 }
+@font-face {
+  font-family: fuenteinsomnia;
+  src: url(../tipos-de-letras/insomnia/insomnia.ttf);
+}
+@font-face {
+  font-family: fuentechristmare;
+  src: url(../tipos-de-letras/christmare/christmare.ttf);
+}
+@font-face {
+  font-family: fuenteszombie;
+  src: url(../tipos-de-letras/zombie/zombie.ttf);
+}
 .hr-linea {
   background-color: rgb(85, 9, 77);
   border: 2px goldenrod;
@@ -224,7 +236,6 @@ header {
   font-family: fuenteyellow;
   font-weight: 600;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
-  padding-top: px;
   align-items: first baseline;
   animation: aparecer 1s;
 }
@@ -438,9 +449,9 @@ header {
 }
 
 .caja-producto h4 {
-  font-family: fuenteracing;
+  font-family: fuenteszombie;
   color: rgb(45, 45, 114);
-  font-size: 40px;
+  font-size: 45px;
   align-items: center;
   position: static;
   text-shadow: -1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px -1px 0 goldenrod, 1px 1px 0 goldenrod;
@@ -492,7 +503,7 @@ header {
 .main-bajo {
   display: flex;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: fuentechristmare;
   font-weight: 400;
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondobajo3.jpg);
   background-position: center center;
@@ -751,8 +762,10 @@ footer {
 }
 
 .caja-producto-guitarra h4 {
+  text-decoration: none;
+  font-family: fuenteszombie;
   color: rgb(45, 45, 114);
-  font-size: 40px;
+  font-size: 50px;
   align-items: center;
   position: static;
   text-shadow: -1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px -1px 0 goldenrod, 1px 1px 0 goldenrod;
@@ -955,14 +968,16 @@ footer {
 }
 
 .caja-producto-amplificador h4 {
+  font-family: fuenteszombie;
   color: rgb(45, 45, 114);
-  font-size: 40px;
+  font-size: 50px;
   align-items: center;
   position: static;
   text-shadow: -1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px -1px 0 goldenrod, 1px 1px 0 goldenrod;
   width: auto;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .caja-producto-amplificador p {
@@ -1401,8 +1416,8 @@ textarea {
   color: black;
   text-decoration: none;
   text-align: center;
-  font-size: 45px;
-  font-family: fuentedarkcollege;
+  font-size: 55px;
+  font-family: fuenteszombie;
   font-weight: 200;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
 }
@@ -1605,7 +1620,7 @@ textarea {
     max-height: 220px;
   }
   .caja-producto h4 {
-    font-size: 35px;
+    font-size: 45px;
     margin: 10px 0;
   }
   .caja-producto h5 {
@@ -1665,7 +1680,7 @@ textarea {
     transform: none;
   }
   .caja-producto-guitarra h4 {
-    font-size: 26px;
+    font-size: 40px;
   }
   .caja-producto-guitarra h5 {
     font-size: 12px;
@@ -1690,7 +1705,7 @@ textarea {
     line-height: 2;
   }
   .caja-producto-amplificador h4 {
-    font-size: 35px;
+    font-size: 40px;
   }
   .caja-producto-amplificador {
     margin: 20px;
@@ -1845,7 +1860,7 @@ textarea {
     font-size: 24px;
   }
   .main-index {
-    margin-top: 60px;
+    margin-top: 10px;
   }
   .main-guitarras h2 {
     font-size: 20px;
@@ -1916,7 +1931,7 @@ textarea {
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 15px;
+    right: 20px;
   }
   .whatsapp-logo img {
     width: 50px;

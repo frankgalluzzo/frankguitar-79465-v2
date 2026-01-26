@@ -91,8 +91,9 @@
     color: $color-cuarto;
 }
 .caja-producto-amplificador h4 {
+    font-family: fuenteszombie;
     color: $color-letratres;
-    font-size: 40px;
+    font-size: 50px;
     align-items: center;
     position: static;
     text-shadow: -1px -1px 0 $color-principal,
@@ -102,6 +103,7 @@
     width: auto;
     padding: 0;
     margin: 0;
+    text-decoration: none;
 }
 .caja-producto-amplificador p {
     color: $color-tercero;
