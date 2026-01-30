@@ -3,15 +3,13 @@
 
 @media (max-width: 360px) {
   /* Header */
-  header {
-    width: 100%;
-  }
+
   .nombre-empresa {
-    font-size: 45px;
+    font-size: 28px;
     line-height: 1.4;
   }
   .productos-empresa {
-    font-size: 16px;
+    font-size: 14px;
   }
   .caja-titulo-header {
     top: 90px;
@@ -21,8 +19,11 @@
     height: 6.5vh;
   }
   .navbar-nav .nav-link {
-    font-size: 14px;
-    padding: 6px;
+    font-size: 12px;
+    padding: 3px;
+  }
+  .navbar-toggler {
+    margin-left: 60%;
   }
   /* Redes header */
   .enlaces-redes-logo {
@@ -41,12 +42,28 @@
   .contenedor-ingreso-compras h3 {
     font-size: 10px;
   }
+  .boton:hover {
+  width: auto;
+  border-radius: 35px;
+}
+.boton:hover .sign {
+  width: 35%;
+  padding-left: $padding-principal;
+}
+.boton:hover .text {
+  opacity: 0;
+  width: 100%;
+  padding-right: $padding-principal;
+}
+.boton:active {
+  transform: none;
+}
   /* Cards productos */
   .caja-producto img {
     max-height: 180px;
   }
   .caja-producto h4 {
-    font-size: 20px;
+    font-size: 35px;
   }
   /* Títulos páginas */
   .titulo-empresa-guitarras h1,
@@ -58,14 +75,27 @@
   .main-index {
     margin-top: 50px;
   }
-  /* Producto individual */
-  .nombre-empresa-individual {
-    font-size: 36px;
-    text-align: center;
+
+  /* Productos ---------------- */
+.nombre-empresa-individual {
+    font-size: 25px;
   }
-  .enlaces-redes-individual img {
-    width: 32px;
-    height: 32px;
+
+.caja-producto-individual h4 {
+    font-size: 25px;
+  }
+.precio-individual{
+    right:  5%;
+    top: 35%;
+    width: 20%; 
+}
+.caja-producto-individual p {
+    font-size: 25px;
+     padding: 2px;
+  }
+  .caja-producto-individual a {
+    font-size: 15px;
+    padding: 2px;
   }
   /* Footer */
   .contenedor-footer {
@@ -99,7 +129,7 @@
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 20px;
+    right: 50px;
     bottom: 10px;
   }
   .whatsapp-logo img {

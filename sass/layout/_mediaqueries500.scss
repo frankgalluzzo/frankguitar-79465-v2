@@ -2,26 +2,30 @@
 @use "../utilities/mixins" as *;
 
 @media (max-width: 500px) {
-header {
-        height: 180px;
-    }
+header{
+    height: 150px;
+}
 .caja-titulo-header{
     top: 100px;
 }
+.titulo-empresa-inicio {  
+    width: 100%;
+    height: 180px; 
+}
 .nombre-empresa {
-    font-size: 60px;
-    line-height: 1.5;
+    font-size: 55px;
+    line-height: 1.4;
+    height: auto;
 }
 .productos-empresa {
     font-size: 20px; 
     }
 /* -------------Barra principal ---------------- */
 .barra-principal {
-    height: 7vh;
-    top: 180px;      
+    height: 8vh; 
 }
 .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 20px;
     padding: $padding-principal;
     
     background-color: $color-cuarto;
@@ -32,13 +36,20 @@ header {
 .navbar-toggler {
     margin-left: 80%;
   }
-
+.titulo-barra{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    height: 35px;
+    font-family: fuenteruthligos;
+    color: $color-principal; 
+}
 /* Redes header */
 .enlaces-redes-logo {
    @include flex;
     gap: 12px;
     top: 25px;
-    left: 60px;     
+    left: 40px;     
 }
 .enlaces-redes-logo a img {
     width: 40px;
@@ -46,7 +57,7 @@ header {
 }
 /* carrito header */
 .contenedor-ingreso-compras {
-     left: 64%;
+     left: 66%;
      text-align: center;
     
     }
@@ -124,15 +135,29 @@ header {
     }
 
 /*---- Footer----- */
+footer{
+    height: 500px;
+
+}
+.contenedor-footer{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+
+}
+.caja-redes{
+    height: 200px;
+    margin: 0;
+}
 .caja-redes a{
-    @include flex;
+    flex-direction: row;
     text-align: center;
     margin: 0;
     gap:0;    
 }
 .caja-redes img {
-        width: 45px;
-        height: 45px;
+        width: 50px;
+        height: 50px;
         gap: 0;      
     }
 .caja-redes p {
@@ -142,7 +167,9 @@ header {
 .caja-redes-logo { 
         font-size: 16px;
         margin: 0;
-        padding: 0;  
+        padding-right: 12%;
+        height: 200px; 
+        text-align: center;
     }
 .caja-redes-logo img {
         width: 60px;
@@ -151,11 +178,14 @@ header {
 /*----- Página Guitarras eléctricas------------------------  */
 
 .guitarras-fondo{
-    margin-top: 60px;
+    margin-top: 40px;
+}
+.titulo-empresa-guitarras{
+    height: 180px;  
 }
 .titulo-empresa-guitarras h1 { 
     font-size: 55px;
-    line-height: 1.5;
+    line-height: 1.7;
     }
 .nombre-productos-guitarras{
    padding: $padding-principal;
@@ -184,22 +214,29 @@ header {
     }
 /* Página Bajos ------------------ */
 .bajos-fondo{
-    margin-top: 60px;
+    margin-top: 40px;
 }
+
 .titulo-empresa-bajos {
         text-align: center;
-        padding: $padding-principal;     
+        padding: $padding-principal;
+        height: 180px;     
     }
 .titulo-empresa-bajos h1 {
     font-size: 55px;
+    line-height: 3;
+
     }
 /* Página Amplificadores ------------------ */
 .ampli-fondo {
-    margin-top: 60px;
+    margin-top: 40px;
+}
+.titulo-empresa-amplificadores{
+    height: 180px;
 }
 .titulo-empresa-amplificadores h1 {
     font-size: 55px;
-    line-height: 2; 
+    line-height: 2.2; 
     }
 .caja-producto-amplificador h4{
    font-size: 40px;
@@ -221,7 +258,10 @@ header {
 
 /* Página Contactanos----------------- */
 .main-contactanos{
-    margin-top: 50px;
+    margin-top: 25px;
+}
+.titulo-empresa-contactanos{
+    height: 180px;
 }
 .titulo-empresa-contactanos h1 {
     font-size: 55px;
@@ -237,6 +277,9 @@ header {
 /* Página Redes Sociales---------------- */
 .contenedor-redessociales{
     margin-top: 50px;
+}
+.titulo-empresa-redessociales{
+    height: 180px;
 }
 .titulo-empresa-redessociales h1 {
     font-size: 55px;
@@ -266,7 +309,7 @@ header {
     }
 /* Productos ---------------- */
 .nombre-empresa-individual {
-    font-size: 50px;
+    font-size: 35px;
   }
 .enlaces-redes-individual{
     right: 0;
@@ -296,7 +339,7 @@ header {
   }
 /* Logo Whatapp ---------------- */
 .whatsapp-logo {
-    right: 25px;
+    right: 12%;
 }
 .whatsapp-logo img {
     width: 50px;

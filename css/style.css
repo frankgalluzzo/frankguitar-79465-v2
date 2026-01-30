@@ -22,16 +22,16 @@
   src: url(../tipos-de-letras/Racing_Sans_One/RacingSansOne-Regular.ttf);
 }
 @font-face {
-  font-family: fuenteinsomnia;
-  src: url(../tipos-de-letras/insomnia/insomnia.ttf);
-}
-@font-face {
   font-family: fuentechristmare;
   src: url(../tipos-de-letras/christmare/christmare.ttf);
 }
 @font-face {
   font-family: fuenteszombie;
   src: url(../tipos-de-letras/zombie/zombie.ttf);
+}
+@font-face {
+  font-family: fuenteruthligos;
+  src: url(../tipos-de-letras/ruthligos/ruthligos.ttf);
 }
 .hr-linea {
   background-color: rgb(85, 9, 77);
@@ -42,11 +42,8 @@
 }
 
 header {
-  position: fixed;
-  top: 0;
   width: 100%;
   height: 150px;
-  z-index: 1000;
 }
 
 .contenedor-header {
@@ -57,13 +54,15 @@ header {
 
 /*---------- header--------- barra principal */
 .barra-principal {
+  position: fixed;
+  top: 0;
+  z-index: 9999;
   display: flex;
   width: 100%;
   height: 7vh;
-  position: relative;
-  top: 9.4em;
-  box-shadow: 0 0 8px 0 goldenrod;
   padding: 1px;
+  background-color: black;
+  box-shadow: 0 0 8px 0 goldenrod;
 }
 
 .imagen-logo {
@@ -119,6 +118,14 @@ header {
     margin-top: 0;
   }
 }
+.titulo-barra {
+  position: absolute;
+  left: 45%;
+  height: 35px;
+  font-family: fuenteruthligos;
+  color: goldenrod;
+}
+
 /*---------- header--------- buscador barra principal */
 .contenedor-buscador-principal {
   display: flex;
@@ -208,13 +215,14 @@ header {
   text-shadow: -2px -2px 0 black, -2px 2px 0 black, 2px -2px 0 black, 2px 2px 0 black;
 }
 
+/*------------header---------- inicial*/
 .titulo-empresa-inicio {
-  width: 100%;
-  height: 100%;
   position: absolute;
   background-image: url(../imagenes/fondos/imgdefondo5.jpg);
   background-size: cover;
-  z-index: 100;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
   box-shadow: 0 0 8px 0 goldenrod;
 }
 
@@ -228,13 +236,14 @@ header {
 }
 
 .nombre-empresa {
-  width: 100%;
-  height: 100%;
+  position: relative;
+  top: 30px;
+  height: 70px;
   color: black;
   text-align: center;
-  font-size: 108px;
-  font-family: fuenteyellow;
-  font-weight: 600;
+  font-size: 100px;
+  font-family: fuenteruthligos;
+  font-weight: 800;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
   align-items: first baseline;
   animation: aparecer 1s;
@@ -249,11 +258,13 @@ header {
   }
 }
 .productos-empresa {
+  position: relative;
+  top: 58px;
   width: 100%;
   height: 100%;
-  color: black 28, 8, 37;
+  color: black;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   font-family: fuentedarkcollege;
   font-weight: 200;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
@@ -372,7 +383,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  padding: 30vh 10px 0 10px;
+  padding: 15vh 10px 0 10px;
   text-align: center;
 }
 
@@ -663,13 +674,15 @@ footer {
 }
 
 .titulo-empresa-guitarras {
-  width: 100%;
-  height: 100%;
   position: absolute;
   background-image: url(../imagenes/fondos/imgdefondo7.jpg);
   background-size: cover;
   padding-bottom: 10px;
   z-index: 100;
+  box-shadow: 0 0 8px 0 goldenrod;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
   box-shadow: 0 0 8px 0 goldenrod;
 }
 
@@ -683,6 +696,8 @@ footer {
 }
 
 .nombre-productos-guitarras {
+  width: 100%;
+  height: 100%;
   color: black;
   text-align: center;
   font-size: 100px;
@@ -690,15 +705,11 @@ footer {
   font-weight: 700;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
   padding-top: 5vh;
-  width: 100%;
-  height: 100%;
 }
 
 .guitarras-fondo {
   display: flex;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: blanchedalmond;
   font-weight: 400;
   background-position: center center;
   background-repeat: no-repeat;
@@ -707,7 +718,7 @@ footer {
   background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondoneon.avif);
   background-size: cover;
   justify-content: space-evenly;
-  padding-top: 200px;
+  padding-top: 10vh;
   width: 100%;
   text-align: center;
 }
@@ -815,14 +826,16 @@ footer {
 }
 
 .titulo-empresa-bajos {
-  width: 100%;
-  height: 100%;
   position: absolute;
   background-image: url(../imagenes/fondos/fondobajo3.jpg);
   background-size: cover;
-  padding-bottom: 10px;
   z-index: 100;
   box-shadow: 0 0 8px 0 goldenrod;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .titulo-empresa-bajos h1 {
@@ -845,7 +858,6 @@ footer {
   font-family: fuentecodiment;
   font-weight: 700;
   text-shadow: -2px -2px 0 white, -2px 2px 0 white, 2px -2px 0 white, 2px 2px 0 white;
-  padding: 20px;
 }
 
 .bajos-fondo {
@@ -862,19 +874,20 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   justify-content: space-evenly;
-  padding-top: 200px;
+  padding-top: 10vh;
   text-align: center;
 }
 
 .titulo-empresa-amplificadores {
-  width: 100%;
-  height: 100%;
   position: absolute;
   background-image: url(../imagenes/fondos/fondoampli3.jpg);
   background-size: cover;
   z-index: 100;
   box-shadow: 0 0 8px 0 goldenrod;
-  padding-bottom: 10px;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
+  text-align: center;
 }
 
 .titulo-empresa-amplificadores h1 {
@@ -911,8 +924,8 @@ footer {
   background-attachment: fixed;
   background-size: cover;
   justify-content: space-evenly;
-  padding-top: 200px;
   text-align: center;
+  padding-top: 10vh;
 }
 
 .caja-producto-amplificador {
@@ -1003,14 +1016,16 @@ footer {
 }
 
 .titulo-empresa-contactanos {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  background-image: url(../imagenes/fondos/imgdefondo6.jpg);
-  background-size: cover;
+  background-image: url(../imagenes/fondos/fondoredesmain.jpg);
+  background-size: auto;
   padding-bottom: 10px;
   z-index: 100;
   box-shadow: 0 0 8px 0 goldenrod;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
+  text-align: center;
 }
 
 .titulo-empresa-contactanos h1 {
@@ -1048,7 +1063,7 @@ footer {
   margin: auto;
   padding: 40px 20px;
   font-family: Arial, sans-serif;
-  padding-top: 240px;
+  padding-top: 12vh;
 }
 
 .contactos-cajas {
@@ -1077,11 +1092,6 @@ footer {
   padding: 30px;
   border-radius: 10px;
   color: rgb(45, 45, 114);
-  transition: transform 2s;
-}
-
-.contactos-formulario:hover {
-  transform: scale(1.1);
 }
 
 .contactos-formulario h2 {
@@ -1130,6 +1140,9 @@ footer {
   padding-bottom: 10px;
   z-index: 100;
   box-shadow: 0 0 8px 0 goldenrod;
+  top: 7vh;
+  width: 100%;
+  height: 150px;
 }
 
 .titulo-empresa-redessociales a img:hover {
@@ -1140,7 +1153,7 @@ footer {
 .contenedor-redessociales {
   display: flex;
   flex-direction: column;
-  padding: 240px 50px 50px 15px;
+  padding: 12vh 50px 50px 15px;
   gap: 35px;
   background: linear-gradient(rgba(127, 138, 165, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondoredessociales.jpg);
   background-size: cover;
@@ -1352,20 +1365,130 @@ textarea {
   color: black;
 }
 
+.form-compras {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fa;
+  margin: 0;
+  padding: 0;
+  background-image: url(../imagenes/fondos/fondocompras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Contenedor */
+.container-compras {
+  max-width: 600px;
+  background: #ffffff;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.container-compras h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.container-compras p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+.container-compras h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #333;
+  border-left: 4px solid #3b82f6;
+  padding-left: 6px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.form-group input,
+select {
+  padding: 12px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  background: #fff;
+  transition: 0.2s;
+}
+
+.form-group input:focus,
+select:focus {
+  border-color: goldenrod;
+  box-shadow: 0 0 6px rgba(59, 130, 246, 0.3);
+}
+
+/* Botón */
+.container-compras .btn {
+  width: 100%;
+  padding: 14px;
+  background: goldenrod;
+  border: none;
+  color: black;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.container-compras .btn:hover {
+  background: #2563eb;
+}
+
+.container-compras .btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    margin: 30px;
+    padding: 20px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
 .header-individual {
-  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 1000;
 }
 
 .contenedor-header-individual {
   display: flex;
   background-color: black;
+  box-shadow: 0 0 8px 0 goldenrod;
 }
 
 .nombre-empresa-individual {
+  position: relative;
+  top: 15px;
+  height: 60px;
   color: goldenrod;
   text-align: center;
-  font-size: 60px;
-  font-family: fuenteyellow;
+  font-size: 40px;
+  font-family: fuenteruthligos;
   font-weight: 500;
   padding-left: 20px;
   padding-right: 20px;
@@ -1373,13 +1496,13 @@ textarea {
 
 .contenedor-productos-individual {
   padding-top: 70px;
-  background: linear-gradient(90deg, rgb(41, 41, 51) 0%, rgb(76, 67, 169) 50%, rgb(227, 224, 215) 100%);
+  background: linear-gradient(90deg, rgb(41, 41, 51) 0%, rgb(76, 67, 169) 50%, rgb(224, 217, 195) 100%);
 }
 
 .enlaces-redes-individual {
   right: 5%;
   position: absolute;
-  bottom: 12px;
+  bottom: 10px;
 }
 
 .enlaces-redes-individual img {
@@ -1474,6 +1597,8 @@ textarea {
 .specs p {
   margin-bottom: 0.4rem;
   font-size: 14px;
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 0 0 6px black;
 }
 
 .spec-title {
@@ -1511,25 +1636,29 @@ textarea {
 
 @media (max-width: 500px) {
   header {
-    height: 180px;
+    height: 150px;
   }
   .caja-titulo-header {
     top: 100px;
   }
+  .titulo-empresa-inicio {
+    width: 100%;
+    height: 180px;
+  }
   .nombre-empresa {
-    font-size: 60px;
-    line-height: 1.5;
+    font-size: 55px;
+    line-height: 1.4;
+    height: auto;
   }
   .productos-empresa {
     font-size: 20px;
   }
   /* -------------Barra principal ---------------- */
   .barra-principal {
-    height: 7vh;
-    top: 180px;
+    height: 8vh;
   }
   .navbar-nav .nav-link {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px;
     background-color: black;
   }
@@ -1539,13 +1668,21 @@ textarea {
   .navbar-toggler {
     margin-left: 80%;
   }
+  .titulo-barra {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 35px;
+    font-family: fuenteruthligos;
+    color: goldenrod;
+  }
   /* Redes header */
   .enlaces-redes-logo {
     display: flex;
     flex-direction: column;
     gap: 12px;
     top: 25px;
-    left: 60px;
+    left: 40px;
   }
   .enlaces-redes-logo a img {
     width: 40px;
@@ -1553,7 +1690,7 @@ textarea {
   }
   /* carrito header */
   .contenedor-ingreso-compras {
-    left: 64%;
+    left: 66%;
     text-align: center;
   }
   .contenedor-ingreso-compras p {
@@ -1627,16 +1764,27 @@ textarea {
     font-size: 14px;
   }
   /*---- Footer----- */
-  .caja-redes a {
+  footer {
+    height: 500px;
+  }
+  .contenedor-footer {
     display: flex;
     flex-direction: column;
+    height: 200px;
+  }
+  .caja-redes {
+    height: 200px;
+    margin: 0;
+  }
+  .caja-redes a {
+    flex-direction: row;
     text-align: center;
     margin: 0;
     gap: 0;
   }
   .caja-redes img {
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     gap: 0;
   }
   .caja-redes p {
@@ -1646,7 +1794,9 @@ textarea {
   .caja-redes-logo {
     font-size: 16px;
     margin: 0;
-    padding: 0;
+    padding-right: 12%;
+    height: 200px;
+    text-align: center;
   }
   .caja-redes-logo img {
     width: 60px;
@@ -1654,11 +1804,14 @@ textarea {
   }
   /*----- Página Guitarras eléctricas------------------------  */
   .guitarras-fondo {
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+  .titulo-empresa-guitarras {
+    height: 180px;
   }
   .titulo-empresa-guitarras h1 {
     font-size: 55px;
-    line-height: 1.5;
+    line-height: 1.7;
   }
   .nombre-productos-guitarras {
     padding: 10px;
@@ -1687,22 +1840,27 @@ textarea {
   }
   /* Página Bajos ------------------ */
   .bajos-fondo {
-    margin-top: 60px;
+    margin-top: 40px;
   }
   .titulo-empresa-bajos {
     text-align: center;
     padding: 10px;
+    height: 180px;
   }
   .titulo-empresa-bajos h1 {
     font-size: 55px;
+    line-height: 3;
   }
   /* Página Amplificadores ------------------ */
   .ampli-fondo {
-    margin-top: 60px;
+    margin-top: 40px;
+  }
+  .titulo-empresa-amplificadores {
+    height: 180px;
   }
   .titulo-empresa-amplificadores h1 {
     font-size: 55px;
-    line-height: 2;
+    line-height: 2.2;
   }
   .caja-producto-amplificador h4 {
     font-size: 40px;
@@ -1723,7 +1881,10 @@ textarea {
   }
   /* Página Contactanos----------------- */
   .main-contactanos {
-    margin-top: 50px;
+    margin-top: 25px;
+  }
+  .titulo-empresa-contactanos {
+    height: 180px;
   }
   .titulo-empresa-contactanos h1 {
     font-size: 55px;
@@ -1739,6 +1900,9 @@ textarea {
   /* Página Redes Sociales---------------- */
   .contenedor-redessociales {
     margin-top: 50px;
+  }
+  .titulo-empresa-redessociales {
+    height: 180px;
   }
   .titulo-empresa-redessociales h1 {
     font-size: 55px;
@@ -1768,7 +1932,7 @@ textarea {
   }
   /* Productos ---------------- */
   .nombre-empresa-individual {
-    font-size: 50px;
+    font-size: 35px;
   }
   .enlaces-redes-individual {
     right: 0;
@@ -1798,7 +1962,7 @@ textarea {
   }
   /* Logo Whatapp ---------------- */
   .whatsapp-logo {
-    right: 25px;
+    right: 12%;
   }
   .whatsapp-logo img {
     width: 50px;
@@ -1810,54 +1974,86 @@ textarea {
 }
 @media (max-width: 412px) {
   /* Header */
-  header {
-    width: 100%;
-  }
   .nombre-empresa {
-    font-size: 50px;
-    line-height: 2;
+    font-size: 40px;
+    line-height: 1.3;
+    top: 45px;
   }
   .productos-empresa {
     font-size: 18px;
   }
-  .caja-titulo-header {
-    top: 95px;
-  }
   /* Barra principal */
   .barra-principal {
-    height: 6vh;
+    height: 8vh;
   }
   .navbar-nav .nav-link {
-    font-size: 15px;
+    font-size: 18px;
     padding: 10px;
   }
   .navbar-toggler {
-    margin-left: 40%;
-    width: 100%;
+    margin-left: 72%;
   }
   /* Redes header */
   .enlaces-redes-logo {
     left: 25px;
-    gap: 5px;
+    top: 35px;
+    gap: 6px;
   }
   .enlaces-redes-logo a img {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
   /* Carrito */
   .contenedor-ingreso-compras {
-    left: 61%;
+    left: 58%;
   }
   .contenedor-ingreso-compras p,
   .contenedor-ingreso-compras h3 {
     font-size: 11px;
+  }
+  .boton {
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: none;
+    box-shadow: none;
+    text-decoration: none;
+  }
+  .sign {
+    transition: none;
+  }
+  .sign img {
+    width: 60%;
+    height: auto;
+    border: 0;
+  }
+  .boton:hover {
+    border: 0;
+  }
+  .boton:hover .sign {
+    width: auto;
+    height: 0;
+    border: 0;
+  }
+  .boton:active {
+    transform: none;
+    border: 0;
+  }
+  .item-compras {
+    gap: 4px;
+  }
+  .item-compras img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0;
   }
   /* Cards productos */
   .caja-producto img {
     max-height: 200px;
   }
   .caja-producto h4 {
-    font-size: 24px;
+    font-size: 35px;
   }
   .main-index {
     margin-top: 10px;
@@ -1870,11 +2066,12 @@ textarea {
   .titulo-empresa-bajos h1,
   .titulo-empresa-amplificadores h1 {
     font-size: 48px;
-    line-height: 1.4;
+    line-height: 2;
   }
   /* Producto individual */
   .nombre-empresa-individual {
-    font-size: 40px;
+    width: 30%;
+    font-size: 25px;
   }
   .enlaces-redes-individual img {
     width: 30px;
@@ -1906,11 +2103,7 @@ textarea {
     position: static;
   }
   .caja-redes a {
-    font-size: 14px;
-  }
-  .caja-redes img {
-    width: 37px;
-    height: 37px;
+    font-size: 16px;
   }
   .caja-redes li {
     gap: 0;
@@ -1919,8 +2112,7 @@ textarea {
   }
   .caja-redes-logo {
     display: flex;
-    font-size: 13px;
-    padding: 0;
+    font-size: 15px;
   }
   .caja-redes-logo img {
     width: 70px;
@@ -1931,7 +2123,7 @@ textarea {
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 20px;
+    right: 45px;
   }
   .whatsapp-logo img {
     width: 50px;
