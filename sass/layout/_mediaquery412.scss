@@ -6,7 +6,7 @@
   /* Header */
  
   .nombre-empresa {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.3;
     top: 45px;
   }
@@ -23,7 +23,7 @@
     padding: 10px;
   }
 .navbar-toggler {
-    margin-left: 72%;
+    margin-left: 85%;
   }
 
   /* Redes header */
@@ -38,7 +38,7 @@
   }
   /* Carrito */
   .contenedor-ingreso-compras {
-    left: 60%;
+    
     align-items: flex-start;
   }
   .contenedor-ingreso-compras p{
@@ -46,7 +46,7 @@
   }
   .contenedor-ingreso-compras h3 {
     font-size: 11px;
-    right: 45px;
+    right: 5px;
   } 
 
 .boton {
@@ -121,6 +121,15 @@
 
   }
 
+  /* Página Redes Sociales---------------- */
+.contenedor-redessociales{
+    margin-top: 50px;
+    margin-right: 0;
+
+}
+
+
+
   /* Producto individual */
 .nombre-empresa-individual {
     width: 30%;
@@ -179,7 +188,7 @@
 }
   /* Whatsapp logo */ 
 .whatsapp-logo{
-    right: 45px;
+    right: 2%;
 }
 .whatsapp-logo img {
     width: 50px;

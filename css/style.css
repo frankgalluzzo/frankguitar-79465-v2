@@ -1153,7 +1153,7 @@ footer {
 .contenedor-redessociales {
   display: flex;
   flex-direction: column;
-  padding: 12vh 50px 50px 15px;
+  padding: 12vh 50px 50px 50px;
   gap: 35px;
   background: linear-gradient(rgba(127, 138, 165, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/fondos/fondoredessociales.jpg);
   background-size: cover;
@@ -1666,11 +1666,11 @@ select:focus {
     background-color: black;
   }
   .navbar-toggler {
-    margin-left: 80%;
+    margin-left: 82%;
   }
   .titulo-barra {
     position: absolute;
-    left: 30%;
+    left: 35%;
     top: 50%;
     height: 35px;
     font-family: fuenteruthligos;
@@ -1690,18 +1690,18 @@ select:focus {
   }
   /* carrito header */
   .contenedor-ingreso-compras {
-    left: 66%;
+    left: 75%;
     text-align: center;
+    max-width: 120px;
   }
   .contenedor-ingreso-compras p {
     font-size: 12px;
     line-height: 1.5;
   }
   .contenedor-ingreso-compras h3 {
-    text-decoration: underline;
     font-size: 12px;
     position: absolute;
-    right: 25px;
+    right: 100%;
     top: 30px;
   }
   .caja-compras {
@@ -1899,7 +1899,8 @@ select:focus {
   }
   /* Página Redes Sociales---------------- */
   .contenedor-redessociales {
-    margin-top: 50px;
+    margin-top: 40px;
+    position: relative;
   }
   .titulo-empresa-redessociales {
     height: 180px;
@@ -1909,7 +1910,8 @@ select:focus {
     line-height: 3;
   }
   .caja-producto-redes {
-    padding: 18px;
+    padding: 10px;
+    margin: 0;
   }
   .información-redes {
     font-size: 1rem;
@@ -1962,7 +1964,7 @@ select:focus {
   }
   /* Logo Whatapp ---------------- */
   .whatsapp-logo {
-    right: 12%;
+    right: 0;
   }
   .whatsapp-logo img {
     width: 50px;
@@ -1975,7 +1977,7 @@ select:focus {
 @media (max-width: 412px) {
   /* Header */
   .nombre-empresa {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 1.3;
     top: 45px;
   }
@@ -1991,7 +1993,7 @@ select:focus {
     padding: 10px;
   }
   .navbar-toggler {
-    margin-left: 72%;
+    margin-left: 85%;
   }
   /* Redes header */
   .enlaces-redes-logo {
@@ -2005,7 +2007,6 @@ select:focus {
   }
   /* Carrito */
   .contenedor-ingreso-compras {
-    left: 60%;
     align-items: flex-start;
   }
   .contenedor-ingreso-compras p {
@@ -2013,7 +2014,7 @@ select:focus {
   }
   .contenedor-ingreso-compras h3 {
     font-size: 11px;
-    right: 45px;
+    right: 5px;
   }
   .boton {
     border: none;
@@ -2083,6 +2084,11 @@ select:focus {
     font-size: 48px;
     line-height: 3.5;
   }
+  /* Página Redes Sociales---------------- */
+  .contenedor-redessociales {
+    margin-top: 50px;
+    margin-right: 0;
+  }
   /* Producto individual */
   .nombre-empresa-individual {
     width: 30%;
@@ -2138,7 +2144,7 @@ select:focus {
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 45px;
+    right: 2%;
   }
   .whatsapp-logo img {
     width: 50px;
