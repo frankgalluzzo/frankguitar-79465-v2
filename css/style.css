@@ -1964,7 +1964,7 @@ select:focus {
   }
   /* Logo Whatapp ---------------- */
   .whatsapp-logo {
-    right: 0;
+    right: 25px;
   }
   .whatsapp-logo img {
     width: 50px;
@@ -1993,7 +1993,7 @@ select:focus {
     padding: 10px;
   }
   .navbar-toggler {
-    margin-left: 85%;
+    margin-left: 80%;
   }
   /* Redes header */
   .enlaces-redes-logo {
@@ -2098,6 +2098,9 @@ select:focus {
     width: 30px;
     height: 30px;
   }
+  .caja-producto-individual {
+    object-fit: fill;
+  }
   .caja-producto-individual h4 {
     font-size: 20px;
     padding: 2px;
@@ -2144,7 +2147,7 @@ select:focus {
   }
   /* Whatsapp logo */
   .whatsapp-logo {
-    right: 2%;
+    right: 25px;
   }
   .whatsapp-logo img {
     width: 50px;

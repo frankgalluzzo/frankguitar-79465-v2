@@ -23,7 +23,7 @@
     padding: 10px;
   }
 .navbar-toggler {
-    margin-left: 85%;
+    margin-left: 80%;
   }
 
   /* Redes header */
@@ -127,9 +127,6 @@
     margin-right: 0;
 
 }
-
-
-
   /* Producto individual */
 .nombre-empresa-individual {
     width: 30%;
@@ -138,6 +135,9 @@
 .enlaces-redes-individual img{
     width: 30px;
     height: 30px;
+}
+.caja-producto-individual{
+  object-fit: fill;
 }
 .caja-producto-individual h4 {
     font-size: 20px;
@@ -188,7 +188,7 @@
 }
   /* Whatsapp logo */ 
 .whatsapp-logo{
-    right: 2%;
+    right: 25px;
 }
 .whatsapp-logo img {
     width: 50px;
