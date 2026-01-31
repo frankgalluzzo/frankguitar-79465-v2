@@ -1587,14 +1587,14 @@ select:focus {
   object-fit: cover;
 }
 
-.specs {
+.contenedor-specs {
   display: flex;
   flex-direction: column;
   gap: 5px;
   text-align: center;
 }
 
-.specs p {
+.contenedor-specs p {
   margin-bottom: 0.4rem;
   font-size: 14px;
   color: white;
@@ -1602,13 +1602,13 @@ select:focus {
 }
 
 .spec-title {
-  margin-top: 1.8rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.4rem;
 }
 
 .whatsapp-logo {
@@ -1670,7 +1670,7 @@ select:focus {
   }
   .titulo-barra {
     position: absolute;
-    left: 50%;
+    left: 30%;
     top: 50%;
     height: 35px;
     font-family: fuenteruthligos;
@@ -1995,9 +1995,9 @@ select:focus {
   }
   /* Redes header */
   .enlaces-redes-logo {
-    left: 25px;
-    top: 35px;
-    gap: 6px;
+    left: 17px;
+    top: 30px;
+    gap: 8px;
   }
   .enlaces-redes-logo a img {
     width: 40px;
@@ -2005,11 +2005,15 @@ select:focus {
   }
   /* Carrito */
   .contenedor-ingreso-compras {
-    left: 58%;
+    left: 60%;
+    align-items: flex-start;
   }
-  .contenedor-ingreso-compras p,
+  .contenedor-ingreso-compras p {
+    font-size: 11px;
+  }
   .contenedor-ingreso-compras h3 {
     font-size: 11px;
+    right: 45px;
   }
   .boton {
     border: none;
@@ -2062,11 +2066,22 @@ select:focus {
     font-size: 20px;
   }
   /* Títulos páginas */
-  .titulo-empresa-guitarras h1,
-  .titulo-empresa-bajos h1,
+  .titulo-empresa-guitarras h1 {
+    font-size: 48px;
+    line-height: 1.7;
+  }
+  .titulo-empresa-bajos h1 {
+    font-size: 48px;
+    line-height: 3.5;
+  }
   .titulo-empresa-amplificadores h1 {
     font-size: 48px;
-    line-height: 2;
+    line-height: 2.8;
+  }
+  .titulo-empresa-contactanos h1,
+  .titulo-empresa-redessociales h1 {
+    font-size: 48px;
+    line-height: 3.5;
   }
   /* Producto individual */
   .nombre-empresa-individual {
@@ -2078,7 +2093,7 @@ select:focus {
     height: 30px;
   }
   .caja-producto-individual h4 {
-    font-size: 25px;
+    font-size: 20px;
     padding: 2px;
   }
   .caja-producto-individual p {
@@ -2087,8 +2102,8 @@ select:focus {
     border-radius: 10px;
   }
   .caja-producto-individual a {
-    font-size: 15px;
-    padding: 2px;
+    font-size: 12px;
+    padding: 1px;
   }
   /* Footer */
   .contenedor-footer {
